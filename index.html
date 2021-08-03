@@ -1,0 +1,168 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="css/style.css" />
+    <title>Internet Speed Survey</title>
+  </head>
+  <body>
+    <div class="container">
+      <h1 id="title">Internet Speed Survey</h1>
+      <p id="description">How fast is your internet connection?</p>
+
+      <form action="#" id="survey-form">
+        <label class="form-label-input" id="email-label" for="email">
+          Email
+          <input
+            class="form-input"
+            type="email"
+            name="email"
+            id="email"
+            placeholder="Enter your email"
+            required
+          />
+        </label>
+        <label class="form-label-input" id="name-label" for="name">
+          Place
+          <input
+            class="form-input"
+            type="text"
+            name="place"
+            id="name"
+            placeholder="Enter your place"
+            required
+          />
+        </label>
+        <label class="form-label-input" id="number-label" for="number">
+          Download [mbps]
+          <input
+            class="form-input"
+            type="number"
+            name="age"
+            id="number"
+            min="0"
+            max="1000"
+            placeholder="0"
+            required
+          />
+        </label>
+        <label class="form-label-input" id="upload-label" for="upload">
+          Upload [mbps]
+          <input
+            class="form-input"
+            type="number"
+            name="age"
+            id="upload"
+            min="0"
+            max="1000"
+            placeholder="0"
+            required
+          />
+        </label>
+        <label class="form-label-input" for="dropdown">
+          Internet Service Provider
+          <select class="form-input" name="" id="dropdown">
+            <option value="" disabled selected>Select Your Provider</option>
+            <option value="">Xhome</option>
+            <option value="">MMC</option>
+            <option value="">Second Media</option>
+          </select>
+        </label>
+        <div class="form-label-input">
+          <p>Your Internet Connect Via?</p>
+          <label class="form-label-checkbox" for="lan"
+            ><input
+              type="checkbox"
+              name="connect-via"
+              value="lan"
+              id="lan"
+            />LAN</label
+          >
+          <label class="form-label-checkbox" for="usb_cable"
+            ><input
+              type="checkbox"
+              name="connect-via"
+              value="usb_cable"
+              id="usb_cable"
+            />USB Cable</label
+          >
+          <label class="form-label-checkbox" for="wireless"
+            ><input
+              type="checkbox"
+              name="connect-via"
+              value="wireless"
+              id="wireless"
+            />Wireless</label
+          >
+          <label class="form-label-checkbox" for="other"
+            ><input
+              type="checkbox"
+              name="connect-via"
+              value="other"
+              id="other"
+            />Other</label
+          >
+        </div>
+
+        <div class="form-label-input">
+          <p>Your Router Type?</p>
+          <label class="form-label-radio" for="type1"
+            ><input
+              type="radio"
+              name="router-type"
+              value="802.11n"
+              id="type1"
+            />802.11n</label
+          >
+          <label class="form-label-radio" for="type2"
+            ><input
+              type="radio"
+              name="router-type"
+              value="802.11g"
+              id="type2"
+            />802.11g</label
+          >
+          <label class="form-label-radio" for="type3"
+            ><input
+              type="radio"
+              name="router-type"
+              value="100_baseT"
+              id="type3"
+            />100 baseT</label
+          >
+          <label class="form-label-radio" for="type4"
+            ><input
+              type="radio"
+              name="router-type"
+              value="gigabit"
+              id="type4"
+            />Gigabit</label
+          >
+          <label class="form-label-radio" for="type5"
+            ><input
+              type="radio"
+              name="router-type"
+              value="applicable"
+              id="type5"
+            />Not Applicable</label
+          >
+        </div>
+
+        <label class="form-label-input" for="comment">
+          Comments
+          <textarea
+            class="form-input text-area"
+            name="comment"
+            id="comment"
+            cols="10"
+            rows="5"
+          ></textarea>
+        </label>
+        <input type="submit" value="Submit" id="submit" />
+      </form>
+    </div>
+    <script src="fcc_debug.js"></script>
+  </body>
+</html>
